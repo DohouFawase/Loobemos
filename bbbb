@@ -1,0 +1,27 @@
+const submit = () => {
+    processingForm.value = true;
+
+    const formData = new FormData();
+    formData.append("naissance", form.naissance);
+    formData.append("contact", form.contact);
+    formData.append("profession", form.profession);
+    formData.append("photo", form.photo[0]); // Prends le premier fichier
+    formData.append("carte", form.carte[0]); // Prends le premier fichier
+
+    form
+        .post(route("validation.store"), formData, {
+            preserveScroll: true,
+            onSuccess: (res) => {
+                store.addToast({
+                    message: "Votre profil a été soumis avec succès",
+                });
+            },
+            onError: (error) => {
+                // Gérer les erreurs de validation
+                console.error(error);
+            },
+        })
+        .finally(() => {
+            processingForm.value = false;
+        });
+};
