@@ -20,7 +20,7 @@
     "dependencies": {
         "caniuse-lite": "^1.0.30001566",
         "chart.js": "^4.4.1",
-        "pinia": "^2.1.6",
+        "pinia": "^2.1.7",
         "vue-pagination": "^0.3.3",
         "vue-router": "^4.2.5",
         "vue-select": "^4.0.0-beta.6",
