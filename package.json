@@ -18,7 +18,7 @@
         "vue": "^3.2.41"
     },
     "dependencies": {
-        "caniuse-lite": "^1.0.30001566",
+        "caniuse-lite": "^1.0.30001577",
         "chart.js": "^4.4.1",
         "pinia": "^2.1.6",
         "vue-pagination": "^0.3.3",
